@@ -30,3 +30,11 @@ def char_sort(character_list):
      import operator
      sorted_character_list = sorted(character_list.items(), key=operator.itemgetter(1), reverse=True)
      return sorted_character_list
+
+
+def pretty_output(list_of_touples):
+     list_of_touples = char_sort(list_of_touples)
+     dict_touples = dict(list_of_touples)
+     for i in dict_touples:
+          print (f"{i} : {dict_touples[i]}")
+     return

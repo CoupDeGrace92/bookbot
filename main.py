@@ -1,11 +1,8 @@
-import string
-
 #Function to open the file
 def get_book_text(bookfile):
     with open(bookfile) as f:
         book = f.read()
     return book
-
 
 
 #The main function that will print the book to the console
@@ -16,10 +13,9 @@ def main ():
     print (f"{words} words found in the document")
     from stats import char_count
     char_dict = char_count(book)
-    print (char_dict)
     from stats import char_sort
-    sorted_characters = char_sort(char_dict)
-    print (sorted_characters)
+    from stats import pretty_output
+    pretty_output(char_dict)
     return
 
 main ()
