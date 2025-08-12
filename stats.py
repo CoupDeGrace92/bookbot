@@ -36,5 +36,5 @@ def pretty_output(list_of_touples):
      list_of_touples = char_sort(list_of_touples)
      dict_touples = dict(list_of_touples)
      for i in dict_touples:
-          print (f"{i} : {dict_touples[i]}")
+          print (f"{i}: {dict_touples[i]}")
      return

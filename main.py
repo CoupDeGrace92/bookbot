@@ -10,12 +10,17 @@ def main ():
     book = get_book_text('books/frankenstein.txt')
     from stats import number_of_words
     words = number_of_words(book)
-    print (f"{words} words found in the document")
     from stats import char_count
     char_dict = char_count(book)
     from stats import char_sort
     from stats import pretty_output
+    print("============ BOOKBOT ============")
+    print("Analyzing book found at books/frankenstein.txt...")
+    print("----------- Word Count ----------")
+    print (f"Found {words} total words")
+    print("--------- Character Count -------")
     pretty_output(char_dict)
+    print("============= END ===============")
     return
 
 main ()
